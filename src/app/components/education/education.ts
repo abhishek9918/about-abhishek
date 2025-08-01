@@ -39,16 +39,6 @@ export class Education implements OnInit, AfterViewInit {
       contactLink: '#contacts',
       delay: 200,
     },
-    {
-      date: '2016-2018',
-      title: 'Intermediate Education',
-      subtitle: 'Saraswati Vidya Mandir Inter College',
-      description:
-        'Completed higher secondary education with a specialization in science.',
-      image: 'colg/pexels-pixabay-301920.jpg',
-      contactLink: '#contacts',
-      delay: 300,
-    },
   ];
 
   trackByFn(index: number, item: any): number {

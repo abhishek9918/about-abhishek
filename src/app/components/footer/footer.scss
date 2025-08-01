@@ -1,7 +1,7 @@
 .copyright {
   color: #3c3e40;
 }
-.copyright a span {
+.copyright a .span {
   display: inline-block;
   animation: nameBeat 1.5s infinite;
   font-weight: bold;
@@ -98,4 +98,26 @@ a {
   display: inline-block;
   line-height: 1em;
   opacity: 0;
+}
+
+.tech-name {
+  font-family: "Fira Code", monospace;
+  font-weight: 500;
+  color: #00f5d4;
+  background: linear-gradient(90deg, #43373a, #d72295);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 1px;
+}
+
+.footer-style-2 .copyright .description a::after {
+  content: "";
+  position: absolute;
+  width: 70%;
+  background-color: transparent !important;
+  height: 0px;
+  left: 0;
+  top: 13px;
+  transition: var(--transition);
+  z-index: -1;
 }
