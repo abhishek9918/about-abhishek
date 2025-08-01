@@ -23,13 +23,38 @@
             "assets": [
               {
                 "glob": "**/*",
-                "input": "public"
+                "input": "src/assets",
+                "output": "assets"
+              },
+              {
+                "glob": "**/*",
+                "input": "public",
+                "output": ""
               }
             ],
             "styles": [
+              "./src/assets/bootstrap.min.css",
+              "./node_modules/slick-carousel/slick/slick.css",
+              "./node_modules/slick-carousel/slick/slick-theme.css",
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "./src/assets/aos.css",
+              "./src/assets/feature.css",
               "src/styles.scss"
-            ]
+            ],
+            "scripts": [
+              "./node_modules/jquery/dist/jquery.min.js",
+              "./node_modules/slick-carousel/slick/slick.min.js",
+              "src/assets/ven/wow.js",
+              "src/assets/ven/feather.min.js",
+              "src/assets/ven/text-type.js",
+              "src/assets/ven/aos.js",
+              "./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+            ],
+            "stylePreprocessorOptions": {
+              "includePaths": ["src/assets"]
+            }
           },
+
           "configurations": {
             "production": {
               "budgets": [
@@ -80,12 +105,13 @@
                 "input": "public"
               }
             ],
-            "styles": [
-              "src/styles.scss"
-            ]
+            "styles": ["src/styles.scss"]
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "c7db4952-143e-48c8-85f6-3b37f2a558b4"
   }
 }

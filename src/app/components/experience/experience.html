@@ -1,0 +1,61 @@
+<div
+  id="experiences"
+  class="rn-experience-area section-separator rn-section-gap section"
+>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="500"
+          data-aos-delay="100"
+          data-aos-once="true"
+          class="section-title text-center aos-init"
+        >
+          <span class="subtitle">Over 2 years of experience</span>
+          <h2 class="title">My Experience</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row mt--10">
+      <div class="col-12 mt_experience">
+        <div
+          *ngFor="let experience of experiences; let i = index"
+          data-aos="fade-up"
+          data-aos-duration="500"
+          [attr.data-aos-delay]="experience.delay"
+          data-aos-once="true"
+          class="experience-style-two aos-init"
+          data-aos-once="true"
+        >
+          <div class="experience-left">
+            <div class="experience-image">
+              <img
+                [src]="experience.image"
+                [attr.data-src]="experience.image"
+                class="lazy-img"
+                alt="Personal Portfolio"
+              />
+            </div>
+            <div class="experience-center">
+              <span class="date">{{ experience.date }}</span>
+              <h4 class="experience-title">{{ experience.title }}</h4>
+              <h6 class="subtitle">{{ experience.subtitle }}</h6>
+              <p class="disc">
+                {{ experience.description }}
+              </p>
+            </div>
+          </div>
+
+          <div class="experience-right">
+            <div class="experience-footer">
+              <a class="rn-btn" [href]="experience.contactLink"
+                ><span>CONTACT ME</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

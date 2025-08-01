@@ -1,0 +1,44 @@
+.bg_image--2 {
+  background-color: #212428;
+}
+
+.sticky {
+  background-color: #3770bb;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  background-color: #555;
+  transition: 0.3s;
+}
+
+.rn-header.header--fixed {
+  position: absolute;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  transition: 0.3s;
+}
+.rn-header.header--sticky {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+}
+
+// .section--hidden {
+//   opacity: 0;
+//   transform: translateY(8rem);
+// }
+
+// .section {
+//   transition: transform 1s, opacity 1s;
+// }
+
+// .lazy-img {
+//   filter: blur(20px);
+// }
+
+// .lazy-img.loaded {
+//   filter: blur(0);
+// }

@@ -1,0 +1,106 @@
+@if (isModalOpen) {
+<div
+  class="modal fade show"
+  id="exampleModalCenter"
+  tabindex="-1"
+  style="display: block; padding-right: 15px"
+  aria-modal="true"
+  role="dialog"
+>
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button
+          (click)="closeModal()"
+          type="button"
+          class="close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-x"
+            >
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line></svg
+          ></span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="portfolio-popup-thumbnail">
+              <div class="image">
+                <img class="w-100" [src]="workObj.img" [alt]="workObj.title" />
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="text-content">
+              <h3>
+                <span>{{ workObj.type }}</span> {{ workObj.title }}
+              </h3>
+              <p class="mb--30">
+                {{ workObj.subtitle }}
+              </p>
+              <p>
+                {{ workObj.description }}
+              </p>
+              <div class="button-group mt--20">
+                <a href="#" class="rn-btn thumbs-icon">
+                  <span>LIKE THIS</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-thumbs-up"
+                  >
+                    <path
+                      d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"
+                    ></path>
+                  </svg>
+                </a>
+                <a [href]="workObj.url" target="_blank" class="rn-btn">
+                  <span>VIEW PROJECT</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-chevron-right"
+                  >
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <!-- End of .text-content -->
+          </div>
+        </div>
+        <!-- End of .row Body-->
+      </div>
+    </div>
+  </div>
+</div>
+}

@@ -1,0 +1,101 @@
+.copyright {
+  color: #3c3e40;
+}
+.copyright a span {
+  display: inline-block;
+  animation: nameBeat 1.5s infinite;
+  font-weight: bold;
+  color: #3a3c3f !important;
+}
+a {
+  color: #3c3e40 !important;
+  text-decoration: none;
+  outline: none;
+}
+.profilName {
+  padding-left: 4px;
+}
+.typing-name {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #ff4e50; /* Optional blinking cursor */
+  font-weight: bold;
+  color: #ff4e50;
+  animation: typingEffect 3s steps(14) forwards,
+    blinkCursor 0.8s step-end infinite;
+}
+
+@keyframes typingEffect {
+  from {
+    width: 0;
+  }
+  to {
+    width: 145px; /* Approx width of your name */
+  }
+}
+
+@keyframes blinkCursor {
+  0%,
+  100% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #ff4e50;
+  }
+}
+
+@keyframes nameBeat {
+  0% {
+    transform: scale(1);
+    color: #ff4e50;
+    text-shadow: 0 0 10px #ff4e50;
+  }
+  50% {
+    transform: scale(1.3);
+    color: #ff6b81;
+    text-shadow: 0 0 15px #ff6b81;
+  }
+  100% {
+    transform: scale(1);
+    color: #ff4e50;
+    text-shadow: 0 0 10px #ff4e50;
+  }
+}
+
+.pb--80 {
+  padding-bottom: 10px !important;
+}
+
+.m.ml11 {
+  font-weight: 700;
+  font-size: 3.5em;
+  padding-left: 2px;
+  position: relative;
+  display: inline-block;
+}
+
+.ml11 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+  padding-left: 8px;
+}
+
+.ml11 .line {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 3px;
+  background-color: #ff6b81;
+  transform-origin: 0 50%;
+}
+
+.ml11 .letter {
+  display: inline-block;
+  line-height: 1em;
+  opacity: 0;
+}
