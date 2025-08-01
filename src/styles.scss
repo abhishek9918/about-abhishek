@@ -11,14 +11,12 @@
 
 @use "./assets/header";
 @use "./assets/nav";
-// @use "./assets/";
 @use "./assets/mobile_menu/mobilemenu";
 
 @use "./assets/elements/button";
 @use "./assets/elements/_section-title.scss";
 @use "./assets/elements/_banner.scss";
 @use "./assets/elements/service";
-// @use "./assets/elements/modal";
 @use "./assets/elements/modal";
 
 @use "./assets/elements/_skill.scss";
@@ -31,8 +29,6 @@
 @use "./assets/elements/slickstyle";
 @use "./assets/elements/_white-version.scss";
 
-// @use "./assets/slick-theme.css";
-// @use "./assets/slick.css";
 @use "./assets/feature.css";
 @use "./assets/aos.css";
 
@@ -156,7 +152,7 @@ object {
   opacity: 0;
   transform: translateY(8rem);
   transition: transform 1s, opacity 1s;
-  pointer-events: none; /* Optional, disables click when hidden */
+  pointer-events: none;
 }
 
 .lazy-img {
@@ -173,31 +169,10 @@ img {
 }
 
 .profile-image {
-  width: clamp(
-    60px,
-    15vw,
-    70px
-  ); /* responsive: min 60px, max 100px, ideal 15% of viewport */
-  aspect-ratio: 1 / 1; /* keeps it square */
-  border-radius: 50%; /* makes it circular */
-  object-fit: cover; /* crops image nicely */
+  width: clamp(60px, 15vw, 70px);
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  object-fit: cover;
   display: inline;
   margin: 0 auto;
 }
-// @media (max-width: 480px) {
-//   .profile-image {
-//     width: 60px;
-//     height: 80px;
-//     border-radius: 50% / 40%; /* makes it oval */
-//   }
-// }
-
-// .profile-image {
-//   width: 20vw; /* Responsive width */
-//   max-width: 100px; /* Upper limit for large screens */
-//   aspect-ratio: 1 / 1; /* Ensures height = width (always a square) */
-//   border-radius: 50%; /* Perfect circle */
-//   object-fit: cover; /* Keeps image filled */
-//   display: block;
-//   margin: 0 auto;
-// }
