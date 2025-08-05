@@ -1,10 +1,11 @@
 import { CommonModule, NgOptimizedImage } from '@angular/common';
 import { AfterViewInit, Component, OnInit } from '@angular/core';
 import AOS from 'aos';
-import 'aos/dist/aos.css';
+import { LazyLoadImage } from '../../core/directives/lazy-load-image';
+// import 'aos/dist/aos.css';
 @Component({
   selector: 'app-education',
-  imports: [CommonModule],
+  imports: [CommonModule, LazyLoadImage],
   templateUrl: './education.html',
   styleUrl: './education.scss',
 })

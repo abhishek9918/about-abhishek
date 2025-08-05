@@ -432,6 +432,7 @@ body.template-color-1 {
         &.current {
           a {
             color: var(--color-primary) !important;
+            // color: var(--color-primary) !important;
           }
         }
       }

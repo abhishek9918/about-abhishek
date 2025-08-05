@@ -336,7 +336,7 @@
       -ms-transform: translateX(-50%);
       transform: translateX(-50%);
       background: var(--background-color-1) !important;
-      box-shadow: var(--shadow-1);
+      box-shadow: var(--shadow-1) !important;
       border-radius: 6px;
     }
 
@@ -855,7 +855,7 @@
 }
 
 .thumbnail.style-2 .inner {
-  padding: 15px;
+  padding: 15px !important;
 }
 
 // home front end developer

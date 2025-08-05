@@ -15,49 +15,44 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular/build:application",
+          "builder": "@angular-builders/custom-webpack:browser",
           "options": {
-            "browser": "src/main.ts",
+            "index": "src/index.html",
+            "main": "src/main.ts",
+            "outputPath": "dist/FrontCraft",
+            "customWebpackConfig": {
+              "path": "./webpack.config.js"
+            },
+
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
-            "allowedCommonJsDependencies": ["jquery", "slick-carousel", "aos"],
+            "allowedCommonJsDependencies": ["aos"],
             "assets": [
-              {
-                "glob": "**/*",
-                "input": "src/assets",
-                "output": "assets"
-              },
-              {
-                "glob": "**/*",
-                "input": "public",
-                "output": ""
-              }
+              { "glob": "**/*", "input": "src/assets", "output": "assets" },
+              { "glob": "**/*", "input": "public", "output": "" }
             ],
             "styles": [
               "./src/assets/bootstrap.min.css",
-              "./node_modules/slick-carousel/slick/slick.css",
-              "./node_modules/slick-carousel/slick/slick-theme.css",
               "./node_modules/bootstrap/dist/css/bootstrap.min.css",
               "./src/assets/aos.css",
               "./src/assets/feature.css",
+              "./node_modules/swiper/swiper-bundle.css",
               "src/styles.scss"
             ],
             "scripts": [
-              "./node_modules/jquery/dist/jquery.min.js",
-              "./node_modules/slick-carousel/slick/slick.min.js",
-              "src/assets/ven/wow.js",
-              "src/assets/ven/feather.min.js",
-              "src/assets/ven/text-type.js",
-              "src/assets/ven/aos.js",
               "./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
             ],
             "stylePreprocessorOptions": {
               "includePaths": ["src/assets"]
             }
           },
-
           "configurations": {
             "production": {
+              "optimization": {
+                "styles": {
+                  "inlineCritical": true
+                }
+              },
               "budgets": [
                 {
                   "type": "initial",
@@ -75,13 +70,16 @@
             "development": {
               "optimization": false,
               "extractLicenses": false,
-              "sourceMap": true
+              "sourceMap": {
+                "scripts": true,
+                "styles": true
+              }
             }
           },
           "defaultConfiguration": "production"
         },
         "serve": {
-          "builder": "@angular/build:dev-server",
+          "builder": "@angular-builders/custom-webpack:dev-server",
           "configurations": {
             "production": {
               "buildTarget": "FrontCraft:build:production"

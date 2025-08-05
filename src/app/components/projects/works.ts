@@ -67,3 +67,8 @@ export const slickConfig = {
     },
   ],
 };
+export const swiperBreakpoints = {
+  '0': { slidesPerView: 1 },
+  '768': { slidesPerView: 2 },
+  '1124': { slidesPerView: 3 },
+};

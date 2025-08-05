@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { AfterViewInit, Component, OnInit } from '@angular/core';
 import AOS from 'aos';
-import 'aos/dist/aos.css';
+// import 'aos/dist/aos.css';
 import { delay } from 'rxjs';
 @Component({
   selector: 'app-experience',
@@ -13,7 +13,7 @@ export class Experience implements OnInit, AfterViewInit {
   ngOnInit(): void {}
   ngAfterViewInit(): void {
     AOS.init({
-      duration: 500,
+      duration: 100,
       easing: 'ease-in-out',
       once: true,
     });
@@ -28,7 +28,7 @@ export class Experience implements OnInit, AfterViewInit {
       subtitle: ' Front-end Developer',
       description:
         'In my current role as a Senior Software Engineer, I lead the development of scalable and high-performance front-end solutions. I work extensively with Angular, Tailwind CSS, and other modern technologies to build intuitive and accessible user interfaces. My focus has been on clean design systems, performance optimization, and delivering user-centric web experiences',
-      image: 'devs/pexels-vladbagacian-3987066.jpg',
+      image: 'devs/office-932926_1280.jpg',
       contactLink: '#contacts',
       delay: 500,
     },
@@ -38,7 +38,7 @@ export class Experience implements OnInit, AfterViewInit {
       subtitle: 'Developer',
       description:
         'As a Software Engineer, I was responsible for developing and maintaining responsive websites with a strong focus on scalability and performance. I worked on full-stack features, implemented reusable UI components, and ensured cross-browser compatibility. This role helped me solidify my problem-solving skills and deepen my understanding of modern frontend architecture.',
-      image: 'devs/pexels-olia-danilevich-4974915.jpg',
+      image: 'devs/programming-593312_1280.jpg',
       contactLink: '#contacts',
       delay: 700,
     },
@@ -48,7 +48,7 @@ export class Experience implements OnInit, AfterViewInit {
       subtitle: 'Developer',
       description:
         'I began my journey as a Front-End Development Intern, where I gained hands-on experience building user interfaces and collaborating within a development team. During this period, I learned the importance of clean code, version control, and responsive design, while working with technologies like HTML, CSS, and Angular.',
-      image: 'devs/pexels-olia-danilevich-4974922.jpg',
+      image: 'devs/computer-4795762_640.jpg',
       contactLink: '#contacts',
       delay: 300,
     },

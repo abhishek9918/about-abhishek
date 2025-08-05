@@ -823,6 +823,49 @@ body {
       }
     }
 
+    // .thumbnail {
+    //   &::before {
+    //     box-shadow: var(--shadow-white-3);
+    //     background: var(--gradient-box-w);
+    //   }
+    // }
+
+    .social-share-inner-left {
+      span {
+        &.title {
+          color: var(--color-heading-wv);
+          font-weight: 500;
+
+          &.white-clr {
+            color: var(--color-lightn);
+          }
+        }
+      }
+
+      // .social-share {
+      //   li {
+      //     a {
+      //       box-shadow: var(--shadow-white-3);
+      //       background: var(--gradient-box-w);
+
+      //       &::before {
+      //         background: var(--gradient-red-hover);
+      //       }
+
+      //       svg {
+      //         color: var(--color-body-white);
+      //       }
+
+      //       &:hover {
+      //         svg {
+      //           color: var(--color-white);
+      //         }
+      //       }
+      //     }
+      //   }
+      // }
+    }
+
     .skill-share-inner {
       span {
         &.title {

@@ -15,7 +15,7 @@ import { worksInterface } from '../../../components/projects/works';
   styleUrl: './modal.scss',
 })
 export class Modal implements OnInit {
-  @ViewChild('workModal') workModal!: ElementRef;
+  @ViewChild('workModal', { static: false }) workModal!: ElementRef;
   isModalOpen: boolean = false;
   workObj!: worksInterface;
   ngOnInit(): void {}

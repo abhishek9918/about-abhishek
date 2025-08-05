@@ -42,3 +42,20 @@
 // .lazy-img.loaded {
 //   filter: blur(0);
 // }
+
+.slide .content .inner span.subtitle {
+  font-size: 14px;
+  font-family: var(--font-secondary) !important;
+  color: var(--color-lightn) !important;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 20px;
+}
+.modal-overlay-active {
+  pointer-events: none;
+  opacity: 0.4;
+  filter: blur(4px);
+  transition: all 0.3s ease-in-out;
+}

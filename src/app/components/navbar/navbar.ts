@@ -1,8 +1,9 @@
 import { AfterViewInit, Component, HostListener, OnInit } from '@angular/core';
+import { LazyLoadImage } from '../../core/directives/lazy-load-image';
 declare var $: any;
 @Component({
   selector: 'app-navbar',
-  imports: [],
+  imports: [LazyLoadImage],
   templateUrl: './navbar.html',
   styleUrl: './navbar.scss',
 })
@@ -16,17 +17,12 @@ export class Navbar implements OnInit, AfterViewInit {
   ngAfterViewInit(): void {
     const sections = document.querySelectorAll<HTMLElement>('.section');
     const navLinks = document.querySelectorAll<HTMLAnchorElement>('.nav-link');
-    console.log(sections, 'sections');
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           const id = entry.target.getAttribute('id');
-          console.log(
-            'Observed section:',
-            id,
-            'Visible:',
-            entry.isIntersecting
-          );
+
           if (entry.isIntersecting && id) {
             navLinks.forEach((link) => {
               const li = link.closest('li');

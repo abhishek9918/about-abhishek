@@ -32,8 +32,8 @@
           <div class="experience-left">
             <div class="experience-image">
               <img
+                appLazyLoadImage
                 (load)="onImageLoad($event)"
-                [attr.data-src]="experience.image"
                 [src]="experience.image"
                 alt="Personal Portfolio"
                 class="lazy-img"
