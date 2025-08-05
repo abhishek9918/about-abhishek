@@ -33,15 +33,12 @@
             ],
             "styles": [
               "./src/assets/bootstrap.min.css",
-              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
               "./src/assets/aos.css",
               "./src/assets/feature.css",
               "./node_modules/swiper/swiper-bundle.css",
               "src/styles.scss"
             ],
-            "scripts": [
-              "./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
-            ],
+            "scripts": [],
             "stylePreprocessorOptions": {
               "includePaths": ["src/assets"]
             }
@@ -68,7 +65,7 @@
               "outputHashing": "all"
             },
             "development": {
-              "optimization": false,
+              "optimization": true,
               "extractLicenses": false,
               "sourceMap": {
                 "scripts": true,

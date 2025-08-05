@@ -116,22 +116,22 @@ object {
   vertical-align: middle;
 }
 
-.ml9 {
-  position: relative;
-}
+// .ml9 {
+//   position: relative;
+// }
 
-.ml9 .text-wrapper {
-  position: relative;
-  overflow: hidden;
-}
+// .ml9 .text-wrapper {
+//   position: relative;
+//   overflow: hidden;
+// }
 
-.ml9 .letter {
-  transform-origin: 50% 100%;
-  color: #f9004d !important;
-  display: inline-block;
+// .ml9 .letter {
+//   transform-origin: 50% 100%;
+//   color: #f9004d !important;
+//   display: inline-block;
 
-  line-height: 1.5;
-}
+//   line-height: 1.5;
+// }
 
 .sticky {
   background-color: #3770bb;
@@ -270,4 +270,33 @@ swiper-container::part(button-next) svg {
   position: absolute;
   z-index: 100;
   transition: 0.3s;
+}
+
+.ml12 {
+  // font-weight: 200;
+  color: #f9004d !important;
+  // font-size: 1.8em;
+  text-transform: uppercase;
+  // letter-spacing: 0.5em;
+}
+
+.ml12 .letter {
+  display: inline-block;
+  color: #f9004d !important;
+
+  // line-height: 1em;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.6s ease-out forwards;
 }
