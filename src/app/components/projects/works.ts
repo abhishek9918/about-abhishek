@@ -31,6 +31,17 @@ export const WORKS = [
     url: 'https://your-tic-tac-toe-url.netlify.app',
     img: '/works/preview-1024x558.png',
   },
+  {
+    title: 'TickTask',
+    subtitle:
+      'A stylish React-based ToDo dashboard with task management features.',
+    description:
+      'TickTask is a productivity-focused ToDo app built using React, Vite, and Tailwind CSS. It features a visually appealing dashboard with task summary cards, a task creation form, responsive layout, and interactive modals. The app showcases organized task tracking with priority, deadlines, and progress indicators. It demonstrates key frontend skills like component-based design, form handling, and UI transitions.',
+    stack: ['React', 'Vite', 'Tailwind CSS'],
+    type: 'Productivity App',
+    url: 'https://tick-master.netlify.app/', // replace with your actual deployed link
+    img: '/Screenshot 2025-08-06 204915.png', // update with your actual preview image path
+  },
 ];
 
 export interface worksInterface {
