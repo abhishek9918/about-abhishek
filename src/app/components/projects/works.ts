@@ -42,6 +42,16 @@ export const WORKS = [
     url: 'https://tick-master.netlify.app/', // replace with your actual deployed link
     img: '/Screenshot 2025-08-06 204915.png', // update with your actual preview image path
   },
+  {
+    title: 'WorldTime - Analog Clock',
+    subtitle: 'A modern analog world clock with multiple timezone support.',
+    description:
+      'WorldTime is a beautifully designed analog clock application built with React, Vite, and Tailwind CSS. It allows users to view the current time across multiple cities worldwide with smooth animations and responsive design. The app features dynamic backgrounds for day and night, an intuitive timezone selector, and a visually appealing clock face. Perfect for showcasing real-time updates, API integration, and elegant UI styling.',
+    stack: ['React', 'Vite', 'Tailwind CSS'],
+    type: 'Time Utility App',
+    url: 'https://worldtime-analog.netlify.app/',
+    img: '/assets/images/worldtime-preview.png',
+  },
 ];
 
 export interface worksInterface {
