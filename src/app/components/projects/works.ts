@@ -50,7 +50,7 @@ export const WORKS = [
     stack: ['React', 'Vite', 'Tailwind CSS'],
     type: 'Time Utility App',
     url: 'https://worldtime-analog.netlify.app/',
-    img: '/assets/images/worldtime-preview.png',
+    img: '/works/Screenshot 2025-08-10 221524.png',
   },
 ];
 
