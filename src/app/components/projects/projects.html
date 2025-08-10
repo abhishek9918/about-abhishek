@@ -39,12 +39,13 @@
           data-aos-once="true"
         >
           <swiper-slide
-            *ngFor="let work of works; let i = index"
+            *ngFor="let work of loopedWorks; let i = index"
             [attr.data-swiper-slide-index]="i"
             class="rn-portfolio-slick swiper-slide"
             (click)="open(work)"
           >
             <div
+              [id]="i"
               class="rn-portfolio"
               data-bs-toggle="modal"
               data-bs-target="#exampleModalCenter"

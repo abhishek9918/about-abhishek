@@ -28,7 +28,7 @@ export const WORKS = [
       'Tic Tac Toe is a responsive, browser-based game built with vanilla JavaScript. It supports two-player mode on a single device, with dynamic win detection, draw logic, and instant replay. The game layout is mobile-friendly and designed with a clean UI. This project demonstrates key frontend concepts such as grid layouts, conditional logic, event handling, and game state management.',
     stack: ['HTML', 'CSS', 'JavaScript'],
     type: 'Game',
-    url: 'https://your-tic-tac-toe-url.netlify.app',
+    url: 'https://think-tac-toe.netlify.app/',
     img: '/works/preview-1024x558.png',
   },
   {

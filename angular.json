@@ -65,11 +65,12 @@
               "outputHashing": "all"
             },
             "development": {
-              "optimization": true,
+              "optimization": false,
               "extractLicenses": false,
               "sourceMap": {
                 "scripts": true,
-                "styles": true
+                "styles": true,
+                "vendor": true
               }
             }
           },

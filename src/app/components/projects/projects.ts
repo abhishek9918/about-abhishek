@@ -49,7 +49,6 @@ export class Projects implements AfterViewInit, OnInit {
   workObj: any;
   isOpenModal: boolean = false;
   open(work: worksInterface) {
-    console.log(work);
     this.workModal.openModal(work);
   }
   close() {
@@ -67,4 +66,12 @@ export class Projects implements AfterViewInit, OnInit {
     img: '/works/start.png',
     id: 0,
   };
+
+  get loopedWorks() {
+    if (!this.works) return [];
+    if (this.works.length <= 3) {
+      return [...this.works, ...this.works]; // duplicate
+    }
+    return this.works;
+  }
 }

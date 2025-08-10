@@ -26,7 +26,7 @@ export class Education implements OnInit, AfterViewInit {
       subtitle: 'Lucknow Public College of Professional Studies',
       description:
         'Gained foundational knowledge in computer science, programming, and web development. Built multiple academic projects and explored technologies like HTML, CSS, JavaScript, and basic data structures',
-      image: 'colg/pexels-emily-ranquist-493228-1205651.jpg',
+      image: 'colg/gettyimages-157180551-1024x1024.jpg',
       contactLink: '#contacts',
       delay: 100,
     },
@@ -36,7 +36,7 @@ export class Education implements OnInit, AfterViewInit {
       subtitle: 'Saraswati Vidya Mandir Inter College',
       description:
         'Completed higher secondary education with a specialization in science.',
-      image: 'colg/pexels-pixabay-301920.jpg',
+      image: 'colg/glasses-4704055_1280.jpg',
       contactLink: '#contacts',
       delay: 200,
     },

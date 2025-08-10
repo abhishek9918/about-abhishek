@@ -297,3 +297,10 @@ swiper-container::part(button-next) svg {
 .animate-fadeInUp {
   animation: fadeInUp 0.6s ease-out forwards;
 }
+
+.heroImg {
+  height: 100%;
+  max-height: 550px;
+  width: 100%;
+  object-fit: cover;
+}
