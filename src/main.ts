@@ -17,6 +17,6 @@ bootstrapApplication(App, appConfig)
       setTimeout(() => {
         loader.remove();
         //   console.log('Loader removed?', !document.getElementById('app-loader'));
-      }, 500);
+      }, 1000);
     }
   });
