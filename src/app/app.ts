@@ -45,9 +45,6 @@ declare var anime: any;
 export class App implements AfterViewInit, OnDestroy {
   title = 'portfolio';
   @ViewChild('navbar', { static: false }) navbar!: ElementRef;
-  // private headerObserver!: IntersectionObserver;
-  // private sectionObserver!: IntersectionObserver;
-  // private imageObserver!: IntersectionObserver;
 
   constructor(
     private stickyService: StickyNavbarService,
@@ -66,9 +63,5 @@ export class App implements AfterViewInit, OnDestroy {
 
   ngOnDestroy(): void {
     this.stickyService.destroy();
-
-    // this.headerObserver?.disconnect();
-    // this.sectionObserver?.disconnect();
-    // this.imageObserver?.disconnect();
   }
 }

@@ -13,10 +13,8 @@ bootstrapApplication(App, appConfig)
     if (loader) {
       loader.style.opacity = '0';
       loader.style.transition = 'opacity 0.5s ease';
-      // remove after fade-out animation
       setTimeout(() => {
         loader.remove();
-        //   console.log('Loader removed?', !document.getElementById('app-loader'));
       }, 1000);
     }
   });
